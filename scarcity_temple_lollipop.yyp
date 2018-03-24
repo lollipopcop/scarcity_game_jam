@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "8689827a-aca6-4e28-8b4f-18e6a69cb0d1",
+            "Value": {
+                "id": "c258bb07-20fc-4f35-803c-f58df8fc0a84",
+                "resourcePath": "scripts\\scr_player_movement\\scr_player_movement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9941799d-cc3e-4042-ad10-a2757c9cf6f4",
             "Value": {
                 "id": "896ad74c-caf4-4979-af57-4760c49070fa",
@@ -276,6 +284,14 @@
                 "id": "ac0bf053-fbaf-445b-bf67-a8ac70dbdc08",
                 "resourcePath": "tilesets\\tile_floor\\tile_floor.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "4472a56e-58c0-41ff-9b1c-b9ced5eb5a79",
+                "resourcePath": "options\\linux\\options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -388,6 +404,14 @@
                 "id": "db34ae46-2dc8-4f0a-8552-fc81fe226ec9",
                 "resourcePath": "views\\e94962e4-9c64-4b18-a404-bf6ea70f6c9f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
+            "Value": {
+                "id": "33f1e71d-c80f-4953-b2bf-98c2b2d69615",
+                "resourcePath": "options\\mac\\options_mac.yy",
+                "resourceType": "GMMacOptions"
             }
         },
         {
