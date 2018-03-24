@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "1f765a9d-aec5-4d11-a27f-3dbbcf58d6d1",
+            "Value": {
+                "id": "8b8654f1-3218-4b5e-b2be-001f10533f2d",
+                "resourcePath": "sprites\\s_dresser\\s_dresser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2894c806-099b-40cb-ad54-da366e37d1ac",
             "Value": {
                 "id": "7e76e307-208c-4304-a5cc-100cb14986f0",
