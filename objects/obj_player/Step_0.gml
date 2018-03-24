@@ -4,26 +4,49 @@ var bbox_side;
 
 //check to see if either the current or previous key were released
 if(keyboard_check_released(vk_left)){
-	if (current_pressed_key == "left"){ current_pressed_key = previous_pressed_key;	} 
+
 	if( previous_pressed_key == "left"){ previous_pressed_key = 0; }
+
+	if (current_pressed_key == "left" && previous_pressed_key != "left"){ 
+		current_pressed_key = previous_pressed_key; 
+	} else if (current_pressed_key == "left" && previous_pressed_key == "left"){
+		current_pressed_key = 0;	
+	}
 }
 
 if(keyboard_check_released(vk_right)){
-	if (current_pressed_key == "right"){ current_pressed_key = previous_pressed_key; } 
+		
 	if( previous_pressed_key == "right"){ previous_pressed_key = 0;	}
+
+	if (current_pressed_key == "right" && previous_pressed_key != "right"){ 
+		current_pressed_key = previous_pressed_key; 
+	} else if (current_pressed_key == "right" && previous_pressed_key == "right"){
+		current_pressed_key = 0;	
+	}
 }
 
 if(keyboard_check_released(vk_up)){
 
-	if (current_pressed_key == "up"){ current_pressed_key = previous_pressed_key; }
 	if( previous_pressed_key == "up"){ previous_pressed_key = 0; }
+
+	if (current_pressed_key == "up" && previous_pressed_key != "up"){ 
+		current_pressed_key = previous_pressed_key; 
+	} else if (current_pressed_key == "up" && previous_pressed_key == "up"){
+		current_pressed_key = 0;	
+	}
 }
 
 if(keyboard_check_released(vk_down)){
 
-	if (current_pressed_key == "down"){ current_pressed_key = previous_pressed_key; } 
 	if( previous_pressed_key == "down"){ previous_pressed_key = 0; }
+
+	if (current_pressed_key == "down" && previous_pressed_key != "down"){ 
+		current_pressed_key = previous_pressed_key; 
+	} else if (current_pressed_key == "down" && previous_pressed_key == "down"){
+		current_pressed_key = 0;	
+	}
 }
+
 
 //check which key was most recently pressed
 if(keyboard_check_pressed(vk_left)){
