@@ -1,46 +1,28 @@
 /// @description movement
 
+var bbox_side;
+
 //check to see if either the current or previous key were released
 if(keyboard_check_released(vk_left)){
-	if (current_pressed_key == "left"){
-		current_pressed_key = previous_pressed_key;	
-	} 
-	
-	if( previous_pressed_key == "left"){
-		previous_pressed_key = 0;	
-	}
+	if (current_pressed_key == "left"){ current_pressed_key = previous_pressed_key;	} 
+	if( previous_pressed_key == "left"){ previous_pressed_key = 0; }
 }
 
 if(keyboard_check_released(vk_right)){
-	if (current_pressed_key == "right"){
-		current_pressed_key = previous_pressed_key;	
-	} 
-
-	if( previous_pressed_key == "right"){
-		previous_pressed_key = 0;	
-	}
+	if (current_pressed_key == "right"){ current_pressed_key = previous_pressed_key; } 
+	if( previous_pressed_key == "right"){ previous_pressed_key = 0;	}
 }
 
 if(keyboard_check_released(vk_up)){
 
-	if (current_pressed_key == "up"){
-		current_pressed_key = previous_pressed_key;	
-	} 
-
-	if( previous_pressed_key == "up"){
-		previous_pressed_key = 0;	
-	}
+	if (current_pressed_key == "up"){ current_pressed_key = previous_pressed_key; }
+	if( previous_pressed_key == "up"){ previous_pressed_key = 0; }
 }
 
 if(keyboard_check_released(vk_down)){
 
-	if (current_pressed_key == "down"){
-		current_pressed_key = previous_pressed_key;	
-	} 
-	
-	if( previous_pressed_key == "down"){
-		previous_pressed_key = 0;	
-	}
+	if (current_pressed_key == "down"){ current_pressed_key = previous_pressed_key; } 
+	if( previous_pressed_key == "down"){ previous_pressed_key = 0; }
 }
 
 //check which key was most recently pressed
@@ -61,12 +43,17 @@ if(keyboard_check_pressed(vk_down)){
 	current_pressed_key = "down"; 
 }
 
-
 //movement setup
-var move_left = keyboard_check(vk_left);
-var move_right = keyboard_check(vk_right);
-var move_up = keyboard_check(vk_up);
-var move_down = keyboard_check(vk_down);
+var move_left = 0;
+var move_right = 0;
+var move_up = 0;
+var move_down = 0;
+
+if(current_pressed_key == "left"){ var move_left = 1; }
+if(current_pressed_key == "right"){ var move_right = 1; }
+if(current_pressed_key == "up"){ var move_up = 1; }
+if(current_pressed_key == "down"){ var move_down = 1; }
+
 
 var h_speed = (move_right - move_left) * p_speed;
 var v_speed = (move_down - move_up) * p_speed;
@@ -90,8 +77,6 @@ if(((tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + v_speed)) != 0) || (ti
 	v_speed = 0;
 }
 
-
-//movement execution
 if( move_left && current_pressed_key == "left" ) {
 	x += h_speed;	
 } 
@@ -104,6 +89,7 @@ if( move_up && current_pressed_key == "up") {
 if( move_down && current_pressed_key == "down") {
 	y += v_speed;
 }
+
 
 // Check for interaction
 if (keyboard_check_pressed(vk_control)) {
