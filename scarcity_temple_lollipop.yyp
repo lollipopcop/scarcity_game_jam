@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "30672640-b1b7-42a6-b3bc-a0c05fabec24",
+            "Value": {
+                "id": "1f362eaf-ff6e-4d54-9428-847d5ffc3a9b",
+                "resourcePath": "sprites\\spr_tile_collision\\spr_tile_collision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "337d5d60-203f-43d3-9978-527bdd5e79b9",
             "Value": {
                 "id": "cd6e802a-acfd-4189-bb54-186ce9d8444d",
@@ -199,11 +207,27 @@
             }
         },
         {
+            "Key": "669adb45-4a61-4fe9-82fc-a09b335255ac",
+            "Value": {
+                "id": "41e5d127-8ff5-4410-bc98-f43c32071720",
+                "resourcePath": "sprites\\spr_tile_floor\\spr_tile_floor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68d07163-847a-4e3d-8d25-7e80d0366229",
             "Value": {
                 "id": "cbc46b42-3c7a-43b6-b6a9-1625c3844dbf",
                 "resourcePath": "views\\68d07163-847a-4e3d-8d25-7e80d0366229.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6dc4c1b4-3d60-4e63-ab58-f54de59c4169",
+            "Value": {
+                "id": "8e6f2e38-7974-43d7-96eb-090f3b2106b8",
+                "resourcePath": "tilesets\\tile_wall\\tile_wall.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -231,6 +255,14 @@
             }
         },
         {
+            "Key": "8016e58b-bcaf-49cd-a187-19b7a1376468",
+            "Value": {
+                "id": "07cc7af0-311d-4310-8a6b-5af157589d3d",
+                "resourcePath": "views\\8016e58b-bcaf-49cd-a187-19b7a1376468.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9941799d-cc3e-4042-ad10-a2757c9cf6f4",
             "Value": {
                 "id": "896ad74c-caf4-4979-af57-4760c49070fa",
@@ -239,11 +271,11 @@
             }
         },
         {
-            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Key": "9cdfb751-fa22-4e00-ad38-09630bb323a3",
             "Value": {
-                "id": "c805a563-2cc4-439a-8bbb-b1d0ffedbcda",
-                "resourcePath": "options\\linux\\options_linux.yy",
-                "resourceType": "GMLinuxOptions"
+                "id": "ac0bf053-fbaf-445b-bf67-a8ac70dbdc08",
+                "resourcePath": "tilesets\\tile_floor\\tile_floor.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -279,6 +311,14 @@
             }
         },
         {
+            "Key": "b97e7613-1cc8-4d30-bb58-0a89425f7210",
+            "Value": {
+                "id": "dc347c09-15a1-44c2-b23a-6e0e8d879c2a",
+                "resourcePath": "tilesets\\tile_collision\\tile_collision.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "bd14e511-d3b2-4e2e-8d4b-289f7fbfc333",
             "Value": {
                 "id": "6de0deae-ebeb-4cfb-b41c-61d419f4af12",
@@ -300,6 +340,14 @@
                 "id": "947e4cd6-1028-4ffe-9dd4-2bfabdcb4b4c",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cdebfe38-e189-408b-a7a4-e49969b29b9e",
+            "Value": {
+                "id": "100fcdf4-7f0a-4991-96fc-c75b33e12542",
+                "resourcePath": "sprites\\spr_tile_wall\\spr_tile_wall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -340,14 +388,6 @@
                 "id": "db34ae46-2dc8-4f0a-8552-fc81fe226ec9",
                 "resourcePath": "views\\e94962e4-9c64-4b18-a404-bf6ea70f6c9f.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
-            "Value": {
-                "id": "d7e04920-9a03-424e-b8f4-49100b4c2e07",
-                "resourcePath": "options\\mac\\options_mac.yy",
-                "resourceType": "GMMacOptions"
             }
         },
         {

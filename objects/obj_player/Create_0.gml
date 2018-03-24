@@ -9,3 +9,6 @@ released_key = 0;
 
 // Action Key
 current_action = 0;
+
+//tilemap used for collision
+tilemap = layer_tilemap_get_id("collision");

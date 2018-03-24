@@ -77,6 +77,20 @@ if(place_meeting(x + h_speed, y + v_speed, obj_furnishing)){
 	h_speed = 0;
 }
 
+//collision with tilemap
+if ( h_speed > 0 ) { bbox_side = bbox_right; } else { bbox_side = bbox_left; }
+
+if(((tilemap_get_at_pixel(tilemap, bbox_side + h_speed, bbox_top)) != 0) || (tilemap_get_at_pixel(tilemap, bbox_side + h_speed, bbox_bottom) != 0)){
+	h_speed = 0;
+}
+
+if ( v_speed > 0 ) { bbox_side = bbox_bottom; } else { bbox_side = bbox_top; }
+
+if(((tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + v_speed)) != 0) || (tilemap_get_at_pixel(tilemap, bbox_right, bbox_side + v_speed) != 0)){
+	v_speed = 0;
+}
+
+
 //movement execution
 if( move_left && current_pressed_key == "left" ) {
 	x += h_speed;	
