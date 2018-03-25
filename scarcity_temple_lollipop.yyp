@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "97fb7da6-22de-4a1c-ba5b-d65dff1d70be",
+            "Value": {
+                "id": "c078cd55-24f4-46ad-8afd-e0d30e895c55",
+                "resourcePath": "sounds\\snd_sleeping\\snd_sleeping.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "9cdfb751-fa22-4e00-ad38-09630bb323a3",
             "Value": {
                 "id": "ac0bf053-fbaf-445b-bf67-a8ac70dbdc08",

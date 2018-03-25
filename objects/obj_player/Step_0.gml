@@ -4,12 +4,14 @@ if ( state == "awake" ){
 	obj_bed.image_index = 0;
 	object_set_visible(id, true);
 	scr_player_movement();	
+	audio_stop_sound(snd_sleeping);
 }
 
 if(state == "sleeping"){
 	image_index = 1;
 	obj_bed.image_index = 1;
 	object_set_visible(id, false);	
+	audio_play_sound(snd_sleeping,1,1);
 }
 
 //increase stress over time
