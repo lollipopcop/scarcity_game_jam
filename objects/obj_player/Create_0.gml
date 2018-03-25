@@ -1,8 +1,10 @@
 /// @description
 
-state = "agency";
+image_speed = 0;
+
+state = "awake";
 stress = 30;
-time = 1420;
+time = 1140;
 
 //player speed
 p_speed = room_speed / 30;

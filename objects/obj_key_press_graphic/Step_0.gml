@@ -5,3 +5,8 @@ if ( distance_to_object(obj_player) > 60 ){
 	creating_instance.key_graphic_active = false;
 	instance_destroy();	
 }
+
+if( obj_player.state == "sleeping" ) {
+	creating_instance.key_graphic_active = false;
+	instance_destroy();	
+}

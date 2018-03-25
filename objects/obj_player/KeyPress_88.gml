@@ -4,8 +4,11 @@
 //if you are adequaetly destressed you can rest
 if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	var stress_difference = 75 - stress;
-	time = time + (power((stress_difference / 4), 2)/2);
-	stress = 75;
+	
+	state = "sleeping";
+
+	alarm[0] = room_speed * (stress_difference / 2);
+
 } else if (distance_to_object(obj_bed) < 30) && (stress > 50) {
 	instance_create_layer(0, 0, "gui_layer", obj_sleep_warning);
 }
