@@ -1,7 +1,8 @@
 /// @description
 
 state = "agency";
-stress = 50;
+stress = 30;
+time = 1420;
 
 //player speed
 p_speed = room_speed / 30;
