@@ -15,3 +15,7 @@ if ( time > 1440 ){
 if ( stress >= 100 ) {
 	room_goto(rm_lose);	
 }
+
+if ( stress < 0 ) {
+	stress = 0;
+}

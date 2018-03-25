@@ -44,6 +44,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress -= 2;
 		}
 		else
 		{
@@ -52,6 +53,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress += 1;
 		}
 	}
 	if(keyboard_check_pressed(ord(2)) && (has_been_pressed == 0))
@@ -67,6 +69,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress -= 2;
 		}
 		else
 		{
@@ -75,6 +78,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress += 1;
 		}
 	}
 
@@ -91,6 +95,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress -= 2;
 		}
 		else
 		{
@@ -99,6 +104,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress += 1;
 		}
 	}
 	if(keyboard_check_pressed(ord(4)) && (has_been_pressed == 0))
@@ -114,6 +120,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress -= 2;
 		}
 		else
 		{
@@ -122,6 +129,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
 			alarm[0] = 5;
+			obj_player.stress += 1;
 		}
 	}
 }

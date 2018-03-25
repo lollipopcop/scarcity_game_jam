@@ -14,4 +14,11 @@ AssignValue(obj_test_block_1);
 AssignValue(obj_test_block_2);
 AssignValue(obj_test_block_3);
 
+// When skill check spawns in, player cannot
+// move until test is over.
+obj_player.p_speed = 0;
+
+// Set alarm to destroy mini game when finished
+alarm[0] = 600;
+
 
