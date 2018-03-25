@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(state == "sleeping"){
+	audio_stop_sound(snd_sleeping);
+	audio_resume_sound(snd_theme);
+	state = "awake";
+	exit;
+}
+
 //if you are adequaetly destressed you can rest
 if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	var stress_difference = 75 - stress;
