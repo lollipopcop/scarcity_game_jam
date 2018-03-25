@@ -20,3 +20,5 @@ current_action = 0;
 
 //tilemap used for collision
 tilemap = layer_tilemap_get_id("collision");
+
+audio_play_sound(snd_theme, 1, 1);

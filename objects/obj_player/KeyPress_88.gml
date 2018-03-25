@@ -4,11 +4,12 @@
 //if you are adequaetly destressed you can rest
 if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	var stress_difference = 75 - stress;
+
+	audio_pause_sound(snd_theme);
+	audio_play_sound(snd_sleeping, 1, 1);
 	
 	state = "sleeping";
 	prev_time = time;
-
-	audio_play_sound(snd_sleeping, 1, 1);
 
 	alarm[0] = room_speed * (stress_difference / 2);
 
@@ -17,5 +18,7 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 }
 
 if (distance_to_object(obj_dresser) < 30) {
-	InitiateSkillCheck(3);
+	InitiateSkillCheck(2);
+	audio_pause_sound(snd_theme);
+	audio_play_sound(snd_relaxing, 1, 0);
 }

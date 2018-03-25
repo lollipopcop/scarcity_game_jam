@@ -4,7 +4,6 @@ if ( state == "awake" ){
 	obj_bed.image_index = 0;
 	object_set_visible(id, true);
 	scr_player_movement();	
-	audio_stop_sound(snd_sleeping);
 }
 
 if(state == "sleeping"){

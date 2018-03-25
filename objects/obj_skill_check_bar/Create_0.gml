@@ -19,6 +19,6 @@ AssignValue(obj_test_block_3);
 obj_player.p_speed = 0;
 
 // Set alarm to destroy mini game when finished
-alarm[0] = 600;
+alarm[0] = 800;
 
 

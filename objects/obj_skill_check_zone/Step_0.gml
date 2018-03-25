@@ -39,7 +39,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		
 		if(current_keystroke == current_value)
 		{
-			audio_play_sound(snd_yes, 1, 0);
+			audio_play_sound(snd_low_G, 1, 0);
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -48,7 +48,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		}
 		else
 		{
-			audio_play_sound(snd_no, 1, 0);	
+			audio_play_sound(snd_noise, 1, 0);	
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -64,7 +64,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		
 		if(current_keystroke == current_value)
 		{
-			audio_play_sound(snd_yes, 1, 0);
+			audio_play_sound(snd_B, 1, 0);
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -73,7 +73,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		}
 		else
 		{
-			audio_play_sound(snd_no, 1, 0);	
+			audio_play_sound(snd_noise, 1, 0);	
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -90,7 +90,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		
 		if(current_keystroke == current_value)
 		{
-			audio_play_sound(snd_yes, 1, 0);
+			audio_play_sound(snd_D, 1, 0);
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -99,7 +99,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		}
 		else
 		{
-			audio_play_sound(snd_no, 1, 0);	
+			audio_play_sound(snd_noise, 1, 0);	
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -115,7 +115,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		
 		if(current_keystroke == current_value)
 		{
-			audio_play_sound(snd_yes, 1, 0);
+			audio_play_sound(snd_high_G, 1, 0);
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
@@ -124,7 +124,7 @@ if(place_meeting(x,y,obj_test_block_1) || place_meeting(x,y,obj_test_block_2) ||
 		}
 		else
 		{
-			audio_play_sound(snd_no, 1, 0);
+			audio_play_sound(snd_noise, 1, 0);
 			current_tile.sprite_index = spr_flipping_tile;
 			last_tile = current_tile;
 			// Alarm[0] resets the tile when activated
