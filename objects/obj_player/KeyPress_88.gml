@@ -6,6 +6,7 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	var stress_difference = 75 - stress;
 	
 	state = "sleeping";
+	audio_play_sound(snd_sleeping, 1, 1);
 
 	alarm[0] = room_speed * (stress_difference / 2);
 

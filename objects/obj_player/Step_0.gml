@@ -11,7 +11,6 @@ if(state == "sleeping"){
 	image_index = 1;
 	obj_bed.image_index = 1;
 	object_set_visible(id, false);	
-	audio_play_sound(snd_sleeping,1,1);
 }
 
 //increase stress over time
