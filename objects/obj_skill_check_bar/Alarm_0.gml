@@ -8,3 +8,4 @@ instance_destroy(obj_test_block_2);
 instance_destroy(obj_test_block_3);
 
 audio_resume_sound(snd_theme);
+obj_player.state = "awake"

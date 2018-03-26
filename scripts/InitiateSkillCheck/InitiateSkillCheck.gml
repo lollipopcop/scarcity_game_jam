@@ -8,7 +8,6 @@ difficulty = argument0;
 
 // Instantiate the obj_skill_check_bar below the player, closest to
 // the screen as possible.
-instance_create_depth(id.x - 80, id.y + 60, -1000, obj_skill_check_bar);
+instance_create_depth(id.x - 102, id.y + 60, -1000, obj_skill_check_bar);
 // Set the test_speed based on the difficulty on the skill check test
 obj_skill_check_zone.test_difficulty = difficulty;
-

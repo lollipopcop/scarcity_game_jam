@@ -1,12 +1,13 @@
 /// @description
 
-image_speed = 0;
+image_speed = 2;
 
 state = "awake";
 stress = 30;
 time = 1260;
 sleep_total = 0;
 prev_time = 0;
+most_recently_pressed = 0;
 
 //player speed
 p_speed = room_speed / 30;

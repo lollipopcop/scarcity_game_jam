@@ -9,7 +9,8 @@
         "5862253b-4441-4ddd-8f7b-d2047d2c75b7",
         "3ed5acd7-f14d-4b31-8510-d5f02df11312",
         "1f3ea2ea-d92c-40f6-b3d1-4ccc61aaff3a",
-        "56aec191-7ffc-4c31-8e99-96d78dd04c6b"
+        "56aec191-7ffc-4c31-8e99-96d78dd04c6b",
+        "e7e7d465-2b58-4fc3-88f2-94e19fc3e2a7"
     ],
     "filterType": "GMSprite",
     "folderName": "Skill Check Bar",

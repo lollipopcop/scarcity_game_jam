@@ -1,13 +1,11 @@
 /// @description movement
 if ( state == "awake" ){
-	image_index = 0;
 	obj_bed.image_index = 0;
 	object_set_visible(id, true);
 	scr_player_movement();	
 }
 
 if(state == "sleeping"){
-	image_index = 1;
 	obj_bed.image_index = 1;
 	object_set_visible(id, false);	
 	sleep_total = sleep_total + (time - prev_time)

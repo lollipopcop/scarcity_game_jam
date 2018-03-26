@@ -5,6 +5,7 @@ if(state == "sleeping"){
 	audio_stop_sound(snd_sleeping);
 	audio_resume_sound(snd_theme);
 	state = "awake";
+	sprite_index = spr_player_unmoving_down;
 	exit;
 }
 
@@ -16,6 +17,7 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	audio_play_sound(snd_sleeping, 1, 1);
 	
 	state = "sleeping";
+	sprite_index = spr_player_sleeping;
 	prev_time = time;
 
 	alarm[0] = room_speed * (stress_difference / 2);
@@ -24,7 +26,8 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	instance_create_layer(0, 0, "gui_layer", obj_sleep_warning);
 }
 
-if (distance_to_object(obj_dresser) < 30) {
+if (distance_to_object(obj_dresser) < 30 && state == "awake") {
+	state = "relaxing";
 	InitiateSkillCheck(2);
 	audio_pause_sound(snd_theme);
 	audio_play_sound(snd_relaxing, 1, 0);
