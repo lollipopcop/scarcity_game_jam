@@ -34,7 +34,7 @@
             "Key": "032ba0a0-51fd-442b-9734-627c492625b2",
             "Value": {
                 "id": "3ad226f4-6c57-4c10-87de-9feefd52b8d4",
-                "resourcePath": "sprites\\spr_clock_hour\\spr_clock_hour.yy",
+                "resourcePath": "sprites\\spr_clock_minute\\spr_clock_minute.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -418,7 +418,7 @@
             "Key": "7e3cc8df-095b-4ce7-ba38-5aadedff4570",
             "Value": {
                 "id": "88787408-b78b-4a54-b9ff-3c3ca929072e",
-                "resourcePath": "sprites\\spr_clock_minute\\spr_clock_minute.yy",
+                "resourcePath": "sprites\\spr_clock_hour\\spr_clock_hour.yy",
                 "resourceType": "GMSprite"
             }
         },
