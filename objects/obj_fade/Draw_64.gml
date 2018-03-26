@@ -11,7 +11,7 @@ if ( a == 1 ){
 	fade = -1;
 }
 
-if (( a== 0 ) && ( fade == -1 )){
+if (( a == 0 ) && ( fade == -1 )){
 	instance_destroy();	
 }
 
