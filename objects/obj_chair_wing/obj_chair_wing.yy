@@ -1,8 +1,8 @@
 {
-    "id": "59eff7ff-0c53-47fe-a743-380d67c6773a",
+    "id": "b02494af-a176-494f-8228-af00a87cdfcf",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dresser",
+    "name": "obj_chair_wing",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "1f765a9d-aec5-4d11-a27f-3dbbcf58d6d1",
+    "spriteId": "8fec72ac-7025-4422-a74f-edcc46d9a528",
     "visible": true
 }

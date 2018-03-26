@@ -1,14 +1,14 @@
 {
-    "id": "59eff7ff-0c53-47fe-a743-380d67c6773a",
+    "id": "06781778-0f9e-44e7-854a-59cf1c12bfd1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dresser",
+    "name": "obj_furnishing_minigame",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "06781778-0f9e-44e7-854a-59cf1c12bfd1",
+    "parentObjectId": "0bd8cc54-129c-4176-bdb2-574859714e51",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "1f765a9d-aec5-4d11-a27f-3dbbcf58d6d1",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

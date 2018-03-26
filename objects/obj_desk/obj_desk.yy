@@ -1,8 +1,8 @@
 {
-    "id": "59eff7ff-0c53-47fe-a743-380d67c6773a",
+    "id": "51c6ac63-4fbf-481e-8bb0-87cd01d0d9bc",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_dresser",
+    "name": "obj_desk",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "1f765a9d-aec5-4d11-a27f-3dbbcf58d6d1",
+    "spriteId": "04a5ece4-d3b3-471b-9555-24d1a97f4ead",
     "visible": true
 }

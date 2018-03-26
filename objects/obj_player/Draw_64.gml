@@ -43,3 +43,6 @@ draw_sprite(spr_clock_alarm_numbers, minute_single_index, alarm_x + 89, alarm_y)
 // Set position to draw Skill check bar
 var skill_x = 60;
 var skill_y = 60;
+
+draw_text(400, 20, current_pressed_key);
+draw_text(400, 50, previous_pressed_key);

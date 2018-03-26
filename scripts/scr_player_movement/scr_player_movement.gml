@@ -4,6 +4,7 @@ var bbox_side;
 
 //check to see if either the current or previous key were released
 if(keyboard_check_released(vk_left)){
+	
 	if( previous_pressed_key == "left"){ previous_pressed_key = 0; }
 
 	if (current_pressed_key == "left" && previous_pressed_key != "left"){ 
@@ -14,6 +15,7 @@ if(keyboard_check_released(vk_left)){
 }
 
 if(keyboard_check_released(vk_right)){
+	
 	if( previous_pressed_key == "right"){ previous_pressed_key = 0;	}
 
 	if (current_pressed_key == "right" && previous_pressed_key != "right"){ 
@@ -24,6 +26,7 @@ if(keyboard_check_released(vk_right)){
 }
 
 if(keyboard_check_released(vk_up)){
+	
 	if( previous_pressed_key == "up"){ previous_pressed_key = 0; }
 
 	if (current_pressed_key == "up" && previous_pressed_key != "up"){ 
@@ -34,6 +37,7 @@ if(keyboard_check_released(vk_up)){
 }
 
 if(keyboard_check_released(vk_down)){
+	
 	if( previous_pressed_key == "down"){ previous_pressed_key = 0; }
 
 	if (current_pressed_key == "down" && previous_pressed_key != "down"){ 
@@ -72,10 +76,25 @@ var move_right = 0;
 var move_up = 0;
 var move_down = 0;
 
-if(current_pressed_key == "left"){ var move_left = 1; sprite_index = spr_player_moving_left; }
-if(current_pressed_key == "right"){ var move_right = 1;  sprite_index = spr_player_moving_right; }
-if(current_pressed_key == "up"){ var move_up = 1;  sprite_index = spr_player_moving_up; }
-if(current_pressed_key == "down"){ var move_down = 1;  sprite_index = spr_player_moving_down; }
+if(current_pressed_key == "left"){ 
+	var move_left = 1; 
+	sprite_index = spr_player_moving_left; 
+}
+
+if(current_pressed_key == "right"){ 
+	var move_right = 1;  
+	sprite_index = spr_player_moving_right; 
+}
+
+if(current_pressed_key == "up"){ 
+	var move_up = 1;  
+	sprite_index = spr_player_moving_up; 
+}
+
+if(current_pressed_key == "down"){ 
+	var move_down = 1;  
+	sprite_index = spr_player_moving_down; 
+}
 
 if(current_pressed_key == 0)
 {
@@ -120,6 +139,7 @@ if(((tilemap_get_at_pixel(tilemap, bbox_left, bbox_side + v_speed)) != 0) || (ti
 	v_speed = 0;
 }
 
+//move the character
 if( move_left && current_pressed_key == "left" ) {
 	x += h_speed;	
 } 

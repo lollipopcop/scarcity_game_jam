@@ -11,11 +11,18 @@ if(state == "sleeping"){
 
 //if you are adequaetly destressed you can rest
 if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
-	var stress_difference = 75 - stress;
 
+	//set state audio
 	audio_pause_sound(snd_theme);
 	audio_play_sound(snd_sleeping, 1, 1);
+
+	//reset movement
+	current_pressed_key = 0;
+	previous_pressed_key = 0;
 	
+	//figure out how long to sleep for
+	var stress_difference = 75 - stress;
+
 	state = "sleeping";
 	sprite_index = spr_player_sleeping;
 	prev_time = time;
@@ -26,9 +33,17 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 	instance_create_layer(0, 0, "gui_layer", obj_sleep_warning);
 }
 
-if (distance_to_object(obj_dresser) < 30 && state == "awake") {
+if (distance_to_object(obj_furnishing_minigame) < 30 && state == "awake") {
+	
+	//reset movement
+	current_pressed_key = 0;
+	previous_pressed_key = 0;
+	
 	state = "relaxing";
+	
 	InitiateSkillCheck(2);
+
+	//set state audio
 	audio_pause_sound(snd_theme);
 	audio_play_sound(snd_relaxing, 1, 0);
 }
