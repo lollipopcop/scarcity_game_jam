@@ -39,14 +39,22 @@ if (distance_to_object(obj_furnishing_minigame) < 30 && state == "awake") {
 	current_pressed_key = 0;
 	previous_pressed_key = 0;
 	
-	state = "relaxing";
-
-	//set up skill check
-	var skill_check_difficulty = instance_nearest(x, y, obj_furnishing_minigame).difficulty;
+	var closest_object = instance_nearest(x, y, obj_furnishing_minigame)
+	if( closest_object.completed == false ){
+		
+		state = "relaxing";
+		
+		//set up skill check
+		var skill_check_difficulty = closest_object.difficulty;
 	
-	InitiateSkillCheck(skill_check_difficulty);
-
-	//set state audio
-	audio_pause_sound(snd_theme);
-	audio_play_sound(snd_relaxing, 1, 0);
+		InitiateSkillCheck(skill_check_difficulty);
+		
+		closest_object.completed = true;
+		
+		//set state audio
+		audio_pause_sound(snd_theme);
+		audio_play_sound(snd_relaxing, 1, 0);
+	} else {
+		instance_create_layer(0, 0, "gui_layer", obj_warning_completed);	
+	}
 }

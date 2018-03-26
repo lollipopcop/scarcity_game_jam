@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_furnishing_minigame",
     "eventList": [
-        
+        {
+            "id": "58289756-18e0-44cf-b946-71eb265060a4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "06781778-0f9e-44e7-854a-59cf1c12bfd1"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

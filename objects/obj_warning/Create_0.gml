@@ -7,5 +7,5 @@ alive = 0;
 //var wh = window_get_height();
 //var ww = window_get_width();
 
-x = window_get_width() / 2;
-y = window_get_height() - 100;
+x = (window_get_width() / 2);
+y = (window_get_height() - 200);

@@ -19,6 +19,7 @@ time = time + (room_speed / (room_speed * 20));
 
 if ( stress >= 100 ) {
 	highscore_add("Sleepless Bob", sleep_total);
+	audio_stop_all();
 	room_goto(rm_lose);	
 }
 
@@ -28,6 +29,7 @@ if ( stress < 0 ) {
 
 if( time = 1860 ){
 	highscore_add("Sleepless Bob", sleep_total);
+	audio_stop_all();
 	room_goto(rm_lose);	
 }
 
