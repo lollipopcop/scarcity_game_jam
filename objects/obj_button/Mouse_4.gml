@@ -1,4 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-room_goto(room0);
+instance_create_layer(0, 0, "gui_layer", obj_fade_start);
+

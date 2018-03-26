@@ -42,6 +42,11 @@ if (distance_to_object(obj_furnishing_minigame) < 30 && state == "awake") {
 	var closest_object = instance_nearest(x, y, obj_furnishing_minigame)
 	if( closest_object.completed == false ){
 		
+		if ( closest_object.is_second_frame == true){
+			closest_object.image_index = 1;
+			sprite_index = spr_player_sleeping;
+		}
+
 		state = "relaxing";
 		
 		//set up skill check
