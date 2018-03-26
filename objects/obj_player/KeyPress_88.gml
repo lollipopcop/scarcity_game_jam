@@ -40,8 +40,11 @@ if (distance_to_object(obj_furnishing_minigame) < 30 && state == "awake") {
 	previous_pressed_key = 0;
 	
 	state = "relaxing";
+
+	//set up skill check
+	var skill_check_difficulty = instance_nearest(x, y, obj_furnishing_minigame).difficulty;
 	
-	InitiateSkillCheck(2);
+	InitiateSkillCheck(skill_check_difficulty);
 
 	//set state audio
 	audio_pause_sound(snd_theme);

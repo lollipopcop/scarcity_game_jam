@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_dresser",
     "eventList": [
-        
+        {
+            "id": "1ff18f51-d393-4812-b430-18c8303990db",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "59eff7ff-0c53-47fe-a743-380d67c6773a"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
