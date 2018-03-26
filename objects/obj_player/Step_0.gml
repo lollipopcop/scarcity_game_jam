@@ -28,7 +28,7 @@ if ( stress < 0 ) {
 	stress = 0;
 }
 
-if( time = 1860 ){
+if( time == 1860 ){
 	highscore_add("Sleepless Bob", sleep_total);
 	audio_stop_all();
 	instance_create_layer(0, 0, "gui_layer", obj_fade_game);
