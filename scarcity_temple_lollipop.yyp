@@ -351,14 +351,6 @@
             }
         },
         {
-            "Key": "57ed5eee-d82b-4152-93f2-cf6205e5fb62",
-            "Value": {
-                "id": "bf3fc7ec-60bc-4446-848d-26e74a998f08",
-                "resourcePath": "objects\\obj_fade_game\\obj_fade_game.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "5862253b-4441-4ddd-8f7b-d2047d2c75b7",
             "Value": {
                 "id": "ec7228a4-ef46-49de-8011-b9a68b0ab55f",
@@ -572,14 +564,6 @@
                 "id": "06adb392-e9ea-47a6-9c5e-c385d63e89db",
                 "resourcePath": "sprites\\spr_bed\\spr_bed.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "8f9cd69f-e8ad-499c-b6f2-c3d4d5392d0c",
-            "Value": {
-                "id": "511a9de7-eb4d-436a-a52d-f77d2dd496f0",
-                "resourcePath": "objects\\obj_fade_start\\obj_fade_start.yy",
-                "resourceType": "GMObject"
             }
         },
         {
