@@ -18,23 +18,34 @@ stress = stress + (room_speed / (room_speed * 50));
 time = time + (room_speed / (room_speed * 20));
 
 if ( stress >= 100 ) {
-	highscore_add("Sleepless Bob", sleep_total);
+	//highscore_add("Sleepless Bob", sleep_total);
+	
+	global.score_total = sleep_total;
+	
 	audio_stop_all();
 	var next_room = instance_create_layer(0, 0, "gui_layer", obj_fade);
-	next_room.next_room = rm_lose;
-	
-
+	if(scr_check_highscore(sleep_total)){
+		next_room.next_room = rm_high_score;
+	} else {
+		next_room.next_room = rm_lose;	
+	}
 }
 
 if ( stress < 0 ) {
 	stress = 0;
 }
 
-if( time == 1860 ){
-	highscore_add("Sleepless Bob", sleep_total);
+if( time >= 1860 ){
+	global.score_total = sleep_total;
+	
+	//highscore_add("Sleepless Bob", sleep_total);
 	audio_stop_all();
 	var next_room = instance_create_layer(0, 0, "gui_layer", obj_fade);
-	next_room.next_room = rm_lose;
-
+	if(scr_check_highscore(sleep_total)){
+		next_room.next_room = rm_high_score;
+	} else {
+		next_room.next_room = rm_lose;	
+	}
 }
+
 
