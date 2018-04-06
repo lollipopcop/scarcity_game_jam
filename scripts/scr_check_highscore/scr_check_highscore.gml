@@ -3,7 +3,7 @@
 //otherwise returns false
 
 
-var score_to_check = argument0;
+var score_to_check = floor(argument0);
 var lowest_score = 2000;
 
 for ( i = 0; i < 10; i++) {
