@@ -3,3 +3,5 @@
 
 image_index = 0;
 image_speed = 0;
+
+next_room = room0;

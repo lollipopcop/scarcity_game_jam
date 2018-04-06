@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description draw clock etc.
 // You can write your code in this editor
 
 draw_set_color(c_black);
@@ -30,11 +30,13 @@ var alarm_y = 255;
 
 draw_sprite(spr_clock_alarm_base, 0, alarm_x, alarm_y);
 
+//calculate the digits to display
 var hour_ten_index = floor( ( sleep_total / 60 ) / 10);
 var hour_single_index = floor( (sleep_total / 60) mod 10);
 var minute_ten_index = floor( (sleep_total mod 60) / 10);
 var minute_single_index = floor( (sleep_total mod 60) mod 10);
 
+//draw the digits on the alarm clock
 draw_sprite(spr_clock_alarm_numbers, hour_ten_index, alarm_x, alarm_y);
 draw_sprite(spr_clock_alarm_numbers, hour_single_index, alarm_x + 29, alarm_y);
 draw_sprite(spr_clock_alarm_numbers, minute_ten_index, alarm_x + 61, alarm_y);

@@ -4,16 +4,15 @@
 
 
 var score_to_check = argument0;
-var lowest_score = 450;
+var lowest_score = 2000;
 
 for ( i = 0; i < 10; i++) {
-		if (lowest_score > highscore_value(i)){
+		if (score_to_check > highscore_value(i)){
+			return true;
+		} else {
 			lowest_score = highscore_value(i);	
 		}
 }
 
-if (score_to_check > lowest_score){
-	return true;	
-} else {
-	return false;	
-}
+return false;
+

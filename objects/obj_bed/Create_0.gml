@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-key_instance = 0;
-key_graphic_active = false;
+event_inherited()
 image_speed = 0;
+state_check = "sleeping";

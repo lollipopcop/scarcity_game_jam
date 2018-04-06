@@ -3,3 +3,6 @@
 
 event_inherited();
 button_text = "Enter Score";
+next_room = rm_lose;
+
+entered_score = false;

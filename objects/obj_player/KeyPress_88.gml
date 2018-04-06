@@ -10,7 +10,7 @@ if(state == "sleeping"){
 }
 
 //if you are adequaetly destressed you can rest
-if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
+if((distance_to_object(obj_bed) <= distance_check) && (stress <= 50)){
 
 	//set state audio
 	audio_pause_sound(snd_theme);
@@ -29,11 +29,11 @@ if((distance_to_object(obj_bed) < 30) && (stress <= 50)){
 
 	alarm[0] = room_speed * (stress_difference / 2);
 
-} else if (distance_to_object(obj_bed) < 30) && (stress > 50) {
+} else if (distance_to_object(obj_bed) <= distance_check) && (stress > 50) {
 	instance_create_layer(0, 0, "gui_layer", obj_sleep_warning);
 }
 
-if (distance_to_object(obj_furnishing_minigame) < 30 && state == "awake") {
+if (distance_to_object(obj_furnishing_minigame) <= distance_check && state == "awake") {
 	
 	//reset movement
 	current_pressed_key = 0;
